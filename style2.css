@@ -1,0 +1,36 @@
+.block-container {
+    position: relative;
+    height: 200px;
+    width: 50%;
+    overflow: hidden;
+    margin: 15px;
+    display: flex;
+    transition: 0.3 ease, transform 1s ease;
+}
+
+.text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.img-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+
+}
+
+.block-container:hover .text {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.block-container:hover .image {
+    transform: scale(2);
+}
